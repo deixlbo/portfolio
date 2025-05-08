@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axl Denielle Ybo Formeloza</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
+        
+        :root {
+            --primary: #ffffff;
+            --secondary: #000000;
+            --accent: #0ff0fc;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary);
+            color: var(--primary);
+            font-family: 'Rajdhani', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+            margin: 0 auto;
+            display: block;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin: 1rem 0 0.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, var(--primary), #aaaaaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .tagline {
+            font-weight: 300;
+            letter-spacing: 4px;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tagline::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .info-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: var(--accent);
+        }
+        
+        .info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.03), transparent);
+            pointer-events: none;
+        }
+        
+        .info-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+        
+        .info-card p {
+            margin-bottom: 0;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+        
+        .hobbies-section {
+            margin-top: 4rem;
+            text-align: center;
+        }
+        
+        .hobbies-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .hobby-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .hobby-item:hover {
+            background: rgba(15, 240, 252, 0.1);
+            border-color: var(--accent);
+            transform: scale(1.05);
+        }
+        
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .glow {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(15, 240, 252, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow" style="top: 20%; left: 10%;"></div>
+    <div class="glow" style="bottom: 15%; right: 10%;"></div>
+    
+    <div class="container">
+        <header>
+            <img src="profile.jpg" alt="Profile Image" class="profile-image">
+            <h1>Axl Denielle Ybo Formeloza</h1>
+            <div class="tagline">BSIT 2nd Year Student</div>
+        </header>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>AGE</h3>
+                <p>20 Years Old</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>GENDER</h3>
+                <p>Male</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>COURSE & YEAR</h3>
+                <p>BSIT - 2nd Year</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>SCHOOL</h3>
+                <p>Gordon College</p>
+            </div>
+        </div>
+        
+        <div class="hobbies-section">
+            <h2 class="section-title">HOBBIES & INTERESTS</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-item">Playing Chess</div>
+                <div class="hobby-item">Call of Duty Mobile</div>
+                <div class="hobby-item">Roblox</div>
+                <div class="hobby-item">Online Gaming</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
